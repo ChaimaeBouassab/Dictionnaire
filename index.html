@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <title>Dictionnaire</title>
+</head>
+
+<body>
+    <h1>Dictionnaire des Termes Informatiques</h1>
+
+    <table id="myTable">
+        <tr id="trcontroller">
+            <td bgcolor="white" id="td1">
+                <div>
+                    <ul class="N1">
+                        <li class="toggleable" data-toggle-id="1" data-definition-id="definition">
+                            <span class="toggle-button" data-toggle-id="1">⧁/⟏</span>
+                            <span id="rElementId" onclick="changeColor(); showDescription('Développement Web')"> Développement Web</span>
+                            <button onclick="insertRow('before', '1')">⊷</button>
+                            <button id="specificButtonID">⌫ Delete</button>
+                            <button onclick="insertRow('after', '1')">⊶</button>
+                        </li>
+
+                        <ol class="N2 sublist-1 hidden">
+                            <li class="toggleable" data-toggle-id="2">
+                                <span class="toggle-button" data-toggle-id="2">⧁/⟏</span>
+                                <span id="rElementId" onclick="changeColor();showDescription('Coté client')">Coté client </span>
+                                <button onclick="insertRow('before', '2')">⊷</button>
+                                <button id="specificButtonID"> ⌫ Delete</button><button onclick="insertRow('after', '2')">⊶</button>
+                            </li>
+                            <ol class="N3 sublist-2 hidden">
+                                <li class="toggleable" data-toggle-id="2">
+                                    
+                                    <span id="rElementId" onclick="changeColor();showDescription('Html')">➝ Html</span>
+
+                                    <button onclick="insertRow('before', '3')">⊷</button>
+                                    <button id="specificButtonID">⌫ Delete</button>
+                                    <button onclick="insertRow('after', '3')">⊶</button>
+                                </li>
+                                <li class="toggleable" data-toggle-id="3">
+                                   
+                                    <span id="rElementId" onclick="changeColor();showDescription('Css')">
+                                        ➝ Css  </span>
+                                    <button onclick="insertRow('before', '4')">⊷</button>
+                                    <button id="specificButtonID">⌫ Delete</button>
+                                    <button onclick="insertRow('after', '4')">⊶</button>
+                                </li>
+                            </ol>
+                            <li class="toggleable" data-toggle-id="3">
+                                <span class="toggle-button" data-toggle-id="3">⧁/⟏</span> 
+                                <span id="rElementId" onclick="changeColor();showDescription('Coté serveur')">Coté serveur</span>
+
+                                <button onclick="insertRow('before', '5')">⊷</button>
+                                <button id="specificButtonID">⌫ Delete</button>
+                                <button onclick="insertRow('after', '5')">⊶</button>
+                            </li>
+                            <ol class="N3 sublist-3 hidden">
+                                <li class="toggleable" data-toggle-id="3"> 
+                                    
+                                    <span id="rElementId" onclick="changeColor();showDescription('Php')">➝ Php</span>
+
+                                    <button onclick="insertRow('before', '6')">⊷</button>
+                                    <button id="specificButtonID">⌫ Delete</button>
+                                    <button onclick="insertRow('after', '6')">⊶</button>
+                                </li>
+                            </ol>
+                        </ol>
+                        <li class="toggleable" data-toggle-id="4">
+                            <span class="toggle-button" data-toggle-id="4">⧁/⟏</span>  
+                            <span id="rElementId" onclick="changeColor();showDescription('Conception')">Conception</span>
+
+                            <button onclick="insertRow('before', '7')">⊷</button>
+                            <button id="specificButtonID">⌫ Delete</button>
+                            <button onclick="insertRow('after', '7')">⊶</button>
+                        </li>
+                        <ol class="N2 sublist-4 hidden">
+                            <li class="toggleable" data-toggle-id="4">
+                                
+                                <span id="rElementId" onclick="changeColor();showDescription('UML')">➝ UML</span>
+                                <button onclick="insertRow('before', '8')">⊷</button>
+                                <button id="specificButtonID">⌫ Delete</button>
+                                <button onclick="insertRow('after', '8')">⊶</button>
+                            </li>
+                        </ol>
+                       
+                        <li class="toggleable" data-toggle-id="5">
+                            <span class="toggle-button" data-toggle-id="5">⧁/⟏</span> 
+                            <span onclick="showDescription('Base de données')">Base de données</span>
+
+                            <button onclick="insertRow('before', '9')">⊷</button>
+                            <button id="specificButtonID">⌫ Delete</button>
+                            <button onclick="insertRow('after', '9')">⊶</button>
+                        </li>
+                        <ol class="N2 sublist-5 hidden">
+                            <li class="toggleable" data-toggle-id="5"> 
+                                <span onclick="showDescription('SQL')">SQL</span>
+
+                                <button onclick="insertRow('before', '10')">⊷</button>
+                                <button id="specificButtonID">⌫ Delete</button>
+                                <button onclick="insertRow('after', '10')">⊶</button>
+                            </li>
+                       
+                        </ol>
+                        <li class="toggleable" data-toggle-id="8">
+                            <span class="toggle-button" data-toggle-id="8">⧁/⟏</span> 
+                            <span onclick="showDescription('Réseaux Informatiques')">Réseaux Informatiques</span>
+
+                            <button onclick="insertRow('before', '12')">⊷</button>
+                            <button id="specificButtonID">⌫ Delete</button>
+                            <button onclick="insertRow('after', '12')">⊶</button>
+                        </li>
+                        <ol class="N2 sublist-8 hidden">
+            
+                            <li class="toggleable" data-toggle-id="9">
+                                <span class="toggle-button" data-toggle-id="9">⧁/⟏</span>
+                                <span onclick="showDescription('Modèle OSI')">Modèle OSI</span>
+
+                                <button onclick="insertRow('before', '13')">⊷</button>
+                                <button id="specificButtonID">⌫ Delete</button>
+                                <button onclick="insertRow('after', '13')">⊶</button>                            </li>
+                            <ol class="N2 sublist-9 hidden">
+                                <li class="toggleable" data-toggle-id="10">
+                                    <span onclick="showDescription('Ses Sept Couches')">Ses Sept Couches</span>
+
+                                    <button onclick="insertRow('before', '14')">⊷</button>
+                                    <button id="specificButtonID">⌫ Delete</button>
+                                    <button onclick="insertRow('after', '14')">⊶</button>                                </li>
+                              
+                            </ol>
+                        </ol>
+                     
+                    </ol>
+                </div>
+            </td>
+            <td bgcolor="white" id="td2">
+                <div id="buttonContainer" style="text-align: center;">
+
+                <button id="myButton" style="background-color: white;" onclick="swapColumns()">
+                    <img src="Pink & Ivory Minimal Script Design Studio Logo (9).png" alt="Swap Columns" style="width: 50px; height: 50px;">
+                </button>
+            </div>
+
+                
+            </td>
+    
+       <td bgcolor="white" id="definitionColumn">
+      
+       </td>
+    </tr>
+    </table>
+    <div id="footer">
+        <br></br>
+        <textarea id="text"></textarea>
+        <p>Nombre de mots : <span id="word-count"></span></p>
+        <p>Nombre de catégories : <span id="category-count"></span></p>
+        <p>Moyenne de mots par catégorie : <span id="category-average"></span></p>
+    </div>
+
+
+</body>
+
+</html>

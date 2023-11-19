@@ -1,0 +1,120 @@
+#myButton {
+    cursor: pointer;
+}
+
+
+#td1,#td3{
+    width: 45%;
+
+}
+#td2{
+    width: 10%;
+}
+.toggleable {
+    cursor: pointer;
+}
+#myButton:hover {
+    cursor: pointer;
+}
+
+#footer {
+    color: white;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;             
+    height: 100vh;
+}
+
+.dev1, .dev2 {
+    height: 200px;
+    width: 200px;
+    color: #9c1f1f;
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+button {
+    margin: 0 10px; 
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+th,
+td {
+    border: 1px solid black;
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 10%;
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle-button {
+    cursor: pointer;
+}
+ol{
+    width: 100%;
+} 
+body {
+    background-image: url(3409297.jpg);
+  }
+
+/* La même couleur du texte/fond est affectée au premier et au dernier élément de chaque niveau de liste */
+.N1>li:first-of-type, .N1>li:last-of-type { color:black;
+}
+
+.N2>li:first-of-type, .N2>li:last-of-type { color: #800080;
+}
+.N3>li:first-of-type, .N3>li:last-of-type { color: #EC5578;
+}
+
+/* Utilisation des compteurs CSS: un compteur par niveau */
+.N1, .N2, .N3 {
+list-style: none;
+}
+body{
+counter-reset: counterN1;
+}
+.N2{
+counter-reset: counterN2;
+}
+.N3{
+counter-reset: counterN3;
+}
+.N1>li::before{
+counter-increment: counterN1;
+content: counter(counterN1,upper-roman) ". ";
+
+}
+.N2>li::before{
+counter-increment: counterN2;
+content: counter(counterN1,upper-roman) "." counter(counterN2) " ";
+}
+.N3>li::before{
+counter-increment: counterN3;
+content: counter(counterN1,upper-roman) "." counter(counterN2) "-" counter(counterN3,lower-alpha) " ";
+}
+
+
+
+
